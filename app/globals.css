@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Big Shoulders Text";
+  src: url("../public/assets/fonts/BigShouldersText-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Big Shoulders Text";
+  src: url("../public/assets/fonts/BigShouldersText-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil';
+  src: url('../public/assets/fonts/BigShouldersStencilText-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../public/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('../public/assets/fonts/LexendDecaRegular.ttf');
+}
+
 @import "tailwindcss";
 
 :root {
@@ -6,11 +34,25 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background); */
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+
+
+  /* color */
+  --color-primary-red: #e30613;
+  --color-primary-blue: #009fe3;
+  --color-footerbg: #191919;
+  --color-background: #1e1e1e;
+  --color-mediumgray: #292929;
+  --color-lightgray: #d9d9d9;
+
+  /* font */
+  --font-primary: "Big Shoulders Text", sans-serif;
+  --font-secondary: "Space Grotesk", sans-serif;
+  --font-title: "Big Shoulders Stencil", sans-serif;
+  --font-lexend: "Lexend Deca", sans-serif;}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -23,4 +65,44 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.swiper-pagination {
+  @apply !left-12;
+  @apply !w-fit;
+  @apply !z-30;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply gap-2.5;
+  @apply !bottom-32;
+  @apply lg:!bottom-24;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-lightgray;
+  @apply relative;
+}
+
+.swiper-pagination-bullet-active::after {
+  @apply content-[""];
+  @apply absolute;
+  @apply w-4;
+  @apply h-4;
+  @apply top-1/2;
+  @apply left-1/2;
+  @apply -translate-1/2;
+  @apply border-lightgray;
+  @apply border-[1px];
+  @apply rounded-[50%];
+}
+
+.highlight {
+  background: -webkit-linear-gradient(180deg, #E30613 -43%, #FFFFFF 61%, #009FE3 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

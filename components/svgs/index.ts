@@ -1,0 +1,10 @@
+export { default as ArrowRight } from "./arrow-right.svg";
+export { default as ArrowUp } from "./arrow-up.svg";
+export { default as PlayButton } from "./play-btn.svg";
+export { default as Facebook } from "./socials/facebook.svg";
+export { default as Instagram } from "./socials/instagram.svg";
+export { default as Email } from "./socials/email.svg";
+export { default as Phone } from "./socials/phone.svg";
+export { default as Triangle } from "./triangle.svg";
+export { default as LanguageSwitcher } from "./language-switcher.svg";
+export { default as BurgerBtn } from "./burger-btn.svg";

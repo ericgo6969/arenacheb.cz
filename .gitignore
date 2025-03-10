@@ -39,3 +39,31 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next-video
+ /Users/root1/Downloads/go-dev--test/assets/videos/*
+! /Users/root1/Downloads/go-dev--test/assets/videos/*.json
+! /Users/root1/Downloads/go-dev--test/assets/videos/*.js
+! /Users/root1/Downloads/go-dev--test/assets/videos/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
